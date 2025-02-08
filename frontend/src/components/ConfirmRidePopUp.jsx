@@ -25,7 +25,6 @@ const ConfirmRidePopUp = ({ setConfirmRidePopUpPanel, ride }) => {
     
             if (response.status === 200) {
                 navigate("/captain-riding", { state: { ride } });
-                window.location.reload();
             }
     
         } catch(err) {
